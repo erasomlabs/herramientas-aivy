@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Herramientas Aivy</string>
+    <string name="menu_title">Herramientas Aivy</string>
+    <string name="tool_notepad">Bloc de notas</string>
+    <string name="tool_chatbot">ChatBot IA</string>
+    <string name="tool_calendar">Calendario</string>
+    <string name="tool_whatsapp">Link WhatsApp</string>
+    <string name="tool_calculator">Calculadora</string>
+    <string name="tool_drawing">Bloc de dibujos</string>
+    <string name="tool_qr">Lector QR</string>
+    <string name="tool_maps">Mapas</string>
+    <string name="tool_converter">Convertidor</string>
+    <string name="tool_pdf">Lector PDF</string>
+    <string name="tool_led">Panel LED</string>
+    <string name="back">Atrás</string>
+    <string name="save">Guardar</string>
+    <string name="clear">Limpiar</string>
+    <string name="send">Enviar</string>
+    <string name="calculate">Calcular</string>
+    <string name="convert">Convertir</string>
+    <string name="scan">Escanear</string>
+    <string name="open">Abrir</string>
+    <string name="display">Mostrar</string>
+    <string name="hint_text">Escribe aquí...</string>
+    <string name="hint_url">URL o número</string>
+    <string name="hint_message">Mensaje</string>
+    <string name="result">Resultado</string>
+    <string name="no_result">Sin resultado</string>
+</resources>
