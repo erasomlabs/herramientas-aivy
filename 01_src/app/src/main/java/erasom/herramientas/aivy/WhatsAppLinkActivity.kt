@@ -5,15 +5,15 @@ import android.net.Uri
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import erasom.herramientas.aivy.databinding.ActivityWhatsAppLinkBinding
+import erasom.herramientas.aivy.databinding.ActivityWhatsappLinkBinding
 
 class WhatsAppLinkActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityWhatsAppLinkBinding
+    private lateinit var binding: ActivityWhatsappLinkBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityWhatsAppLinkBinding.inflate(layoutInflater)
+        binding = ActivityWhatsappLinkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnOpen.setOnClickListener {
