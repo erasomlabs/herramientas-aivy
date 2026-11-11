@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityNotepadBinding
 
-class NotepadActivity : AppCompatActivity() {
+class NotepadActivity : ToolActivity() {
 
     private lateinit var binding: ActivityNotepadBinding
     private lateinit var prefs: SharedPreferences

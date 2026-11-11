@@ -11,7 +11,7 @@ import erasom.herramientas.aivy.databinding.ActivityPdfReaderBinding
 import java.io.File
 import java.io.FileOutputStream
 
-class PDFReaderActivity : AppCompatActivity() {
+class PDFReaderActivity : ToolActivity() {
 
     private lateinit var binding: ActivityPdfReaderBinding
     private var pdfRenderer: PdfRenderer? = null

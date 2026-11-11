@@ -6,7 +6,7 @@ import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityChatBotBinding
 
-class ChatBotActivity : AppCompatActivity() {
+class ChatBotActivity : ToolActivity() {
 
     private lateinit var binding: ActivityChatBotBinding
 

@@ -28,6 +28,13 @@ class MonetizationManager(private val activity: Activity) {
         private const val REWARDED_ID = "ca-app-pub-2946370347896607/1251699383"
         private const val REWARDED_INTERSTITIAL_ID = "ca-app-pub-2946370347896607/3555588197"
         private const val INTERSTITIAL_ID = "ca-app-pub-2946370347896607/591404887"
+
+        /** Instancia única creada por MainActivity, usada por las herramientas vía ToolActivity. */
+        var shared: MonetizationManager? = null
+    }
+
+    init {
+        shared = this
     }
 
     private var interstitialAd: InterstitialAd? = null
@@ -98,8 +105,8 @@ class MonetizationManager(private val activity: Activity) {
         )
     }
 
-    /** Se muestra intersticial cada 4 herramientas usadas. */
-    fun onToolClosed(onComplete: () -> Unit) {
+    /** Se muestra intersticial cada 4 herramientas usadas, sobre la activity que se cierra. */
+    fun onToolClosed(host: Activity, onComplete: () -> Unit) {
         toolUsageCount++
         val ad = interstitialAd
         if (toolUsageCount % 4 == 0 && ad != null) {
@@ -113,7 +120,7 @@ class MonetizationManager(private val activity: Activity) {
                     onComplete()
                 }
             }
-            ad.show(activity)
+            ad.show(host)
             interstitialAd = null
         } else {
             onComplete()

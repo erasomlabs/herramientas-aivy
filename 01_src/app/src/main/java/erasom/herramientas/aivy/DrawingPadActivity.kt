@@ -10,7 +10,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityDrawingPadBinding
 
-class DrawingPadActivity : AppCompatActivity() {
+class DrawingPadActivity : ToolActivity() {
 
     private lateinit var binding: ActivityDrawingPadBinding
     private lateinit var canvas: Canvas

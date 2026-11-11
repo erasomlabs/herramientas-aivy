@@ -5,7 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityCalculatorBinding
 
-class CalculatorActivity : AppCompatActivity() {
+class CalculatorActivity : ToolActivity() {
 
     private lateinit var binding: ActivityCalculatorBinding
     private var currentInput = ""

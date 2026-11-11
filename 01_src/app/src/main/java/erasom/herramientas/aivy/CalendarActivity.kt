@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityCalendarBinding
 
-class CalendarActivity : AppCompatActivity() {
+class CalendarActivity : ToolActivity() {
 
     private lateinit var binding: ActivityCalendarBinding
 

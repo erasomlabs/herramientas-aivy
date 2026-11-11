@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import erasom.herramientas.aivy.databinding.ActivityLedPanelBinding
 
-class LEDPanelActivity : AppCompatActivity() {
+class LEDPanelActivity : ToolActivity() {
 
     private lateinit var binding: ActivityLedPanelBinding
 

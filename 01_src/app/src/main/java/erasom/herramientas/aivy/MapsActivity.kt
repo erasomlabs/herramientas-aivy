@@ -9,7 +9,7 @@ import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.Marker
 import erasom.herramientas.aivy.databinding.ActivityMapsBinding
 
-class MapsActivity : AppCompatActivity() {
+class MapsActivity : ToolActivity() {
 
     private lateinit var binding: ActivityMapsBinding
     private lateinit var mapView: MapView
