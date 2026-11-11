@@ -8,11 +8,19 @@ import erasom.herramientas.aivy.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var monetizationManager: MonetizationManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        monetizationManager = MonetizationManager(this)
+        monetizationManager.initPrivacyAndAds {
+            runOnUiThread {
+                monetizationManager.attachBanner(binding.bannerContainer)
+            }
+        }
 
         binding.btnNotepad.setOnClickListener { startActivity(Intent(this, NotepadActivity::class.java)) }
         binding.btnChatBot.setOnClickListener { startActivity(Intent(this, ChatBotActivity::class.java)) }
