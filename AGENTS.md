@@ -28,4 +28,4 @@
 
 ## 6. Skills
 - No aplica senior-frontend (app nativa Android, no sitio web)
-" path="D:\Antigravity\erasomlabs\herramientas.aivy\AGENTS.md
+- **web-copywriting:** Para redactar el README, la ficha de Play Store y el microcopy de la app.
